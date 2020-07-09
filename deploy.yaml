@@ -27,7 +27,7 @@ steps:
       - hello-kubernetes
       - --ignore-not-found
     env:
-      - CLOUDSDK_COMPUTE_ZONE=us-central1-f
+      - CLOUDSDK_COMPUTE_ZONE=europe-west4-c
       - CLOUDSDK_CONTAINER_CLUSTER=my-cluster
   - name: 'gcr.io/cloud-builders/kubectl'
     args:
@@ -35,5 +35,5 @@ steps:
       - hello-kubernetes
       - --image=gcr.io/$PROJECT_ID/hello-kubernetes
     env:
-      - CLOUDSDK_COMPUTE_ZONE=us-central1-f
+      - CLOUDSDK_COMPUTE_ZONE=europe-west4-c
       - CLOUDSDK_CONTAINER_CLUSTER=my-cluster
