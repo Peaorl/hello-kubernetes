@@ -3,4 +3,4 @@ steps:
   args: ['echo', 'hello world']
 options:
   cluster:
-    name: projects/${PROJECT_ID}/locations/${REGION}/clusters/${CLUSTER_NAME}
+    name: projects/wlynch-test/locations/europe-west4/clusters/amisdorp-cb4a
