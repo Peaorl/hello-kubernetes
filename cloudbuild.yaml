@@ -13,7 +13,8 @@
 # limitations under the License.	
 # test
 
-steps:
-  - name: 'gcr.io/cloud-builders/go'
-    args: [ 'test' ]
-    env: [ 'GOPATH=/workspace' ]
+- name: ubuntu
+  args: ['echo', 'hello world']
+options:
+  cluster:
+    name: projects/wlynch-test/locations/europe-west4/clusters/amisdorp-cb4a
